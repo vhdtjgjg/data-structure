@@ -1,4 +1,5 @@
 /**
+ * https://blog.csdn.net/javazejian/article/details/53362993
  * 栈接口抽象数据类型
  */
 public interface Stack<T> {
