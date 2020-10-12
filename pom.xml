@@ -14,6 +14,15 @@
         <module>leetCode</module>
         <module>self</module>
         <module>structures</module>
+        <module>
+            algs4
+        </module>
+        <module>
+            DynamicArray
+        </module>
+        <module>
+            dynamic_array
+        </module>
     </modules>
 
 

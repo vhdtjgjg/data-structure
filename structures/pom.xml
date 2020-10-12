@@ -13,6 +13,12 @@
     <packaging>pom</packaging>
     <modules>
         <module>stack</module>
+        <module>
+            list
+        </module>
+        <module>
+            daynamic_array
+        </module>
     </modules>
 
 
