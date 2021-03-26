@@ -11,6 +11,8 @@
 
     <artifactId>self</artifactId>
 
+    <packaging>pom</packaging>
+
     <modules>
         <module>queue</module>
     </modules>
