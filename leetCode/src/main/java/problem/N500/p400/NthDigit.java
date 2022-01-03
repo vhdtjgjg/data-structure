@@ -1,4 +1,4 @@
-package problem.N500.NO416_partition_equal_subset_sum.p400;
+package problem.N500.p400;
 
 public class NthDigit {
 

@@ -1,9 +1,7 @@
-package problem.N500.NO416_partition_equal_subset_sum.p400;
+package problem.N500.p400;
 
 import org.junit.Assert;
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 public class NthDigitTest {
 
