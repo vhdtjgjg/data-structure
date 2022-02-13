@@ -1,5 +1,7 @@
 package problem.N300.P226_invert_binary_tree;
 
+import common.TreeNode;
+
 public class Solution {
 
     public TreeNode invertTree(TreeNode root) {

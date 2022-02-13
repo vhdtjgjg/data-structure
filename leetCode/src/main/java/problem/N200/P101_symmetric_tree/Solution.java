@@ -1,5 +1,6 @@
 package problem.N200.P101_symmetric_tree;
 
+import common.TreeNode;
 import org.junit.Test;
 
 public class Solution {

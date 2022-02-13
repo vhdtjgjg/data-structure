@@ -1,5 +1,7 @@
 package problem.N200.P110_balanced_binary_tree;
 
+import common.TreeNode;
+
 public class Solution {
 
     public boolean isBalanced(TreeNode root) {

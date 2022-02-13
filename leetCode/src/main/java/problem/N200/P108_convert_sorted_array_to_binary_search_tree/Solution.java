@@ -1,5 +1,7 @@
 package problem.N200.P108_convert_sorted_array_to_binary_search_tree;
 
+import common.TreeNode;
+
 public class Solution {
 
     public TreeNode sortedArrayToBST(int[] nums) {
