@@ -16,7 +16,7 @@ public class MyQueue {
         tempStack=new Stack<>();
     }
 
-    /** Push element x to the back of queue. */
+    /** Push element x to the back ofInt queue. */
     public void push(int x) {
 
 
@@ -35,7 +35,7 @@ public class MyQueue {
 
     }
 
-    /** Removes the element from in front of queue and returns that element. */
+    /** Removes the element from in front ofInt queue and returns that element. */
     public int pop() {
 
         return stack.pop();

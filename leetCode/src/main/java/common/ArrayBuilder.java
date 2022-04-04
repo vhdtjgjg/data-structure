@@ -2,7 +2,13 @@ package common;
 
 public class ArrayBuilder {
 
-    public static int[] of(int...nums){
+    public static int[] ofInt(int...nums){
         return nums;
     }
+
+    public static <T> T[] of(T...nums){
+        return nums;
+    }
+
+
 }

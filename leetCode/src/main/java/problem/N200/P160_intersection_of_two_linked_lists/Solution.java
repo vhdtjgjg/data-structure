@@ -1,5 +1,7 @@
 package problem.N200.P160_intersection_of_two_linked_lists;
 
+import common.ListNode;
+
 import java.util.HashSet;
 import java.util.Set;
 

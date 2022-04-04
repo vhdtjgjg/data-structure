@@ -26,7 +26,7 @@ public class MyStack {
         }
     }
 
-    /** Removes the element on top of the stack and returns that element. */
+    /** Removes the element on top ofInt the stack and returns that element. */
     public int pop() {
 
         return integerQueue.poll();

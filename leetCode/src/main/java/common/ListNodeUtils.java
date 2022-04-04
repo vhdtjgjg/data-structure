@@ -15,4 +15,13 @@ public class ListNodeUtils {
          Optional.ofNullable(listNode).ifPresent(ListNode::show);
         System.out.println();
     }
+
+    public static int getLen(ListNode listNode){
+        int len=0;
+        while (listNode!=null){
+            len++;
+            listNode=listNode.next;
+        }
+        return len;
+    }
 }

@@ -10,7 +10,7 @@ public class SliceTest {
 
     @Test
     public void numberOfArithmeticSlices() {
-        Assertions.assertThat(SLICE.numberOfArithmeticSlices(ArrayBuilder.of(1,2,3,4))).isEqualTo(3);
-        Assertions.assertThat(SLICE.numberOfArithmeticSlices(ArrayBuilder.of(1))).isEqualTo(0);
+        Assertions.assertThat(SLICE.numberOfArithmeticSlices(ArrayBuilder.ofInt(1,2,3,4))).isEqualTo(3);
+        Assertions.assertThat(SLICE.numberOfArithmeticSlices(ArrayBuilder.ofInt(1))).isEqualTo(0);
     }
 }

@@ -4,14 +4,12 @@ import common.ArrayBuilder;
 import common.ArrayUtils;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
-
 public class NumMoverTest {
 
     @Test
     public void moveZeroes() {
         NumMover numMover = new NumMover();
-        int[] nums = ArrayBuilder.of(0, 1, 0, 3, 12);
+        int[] nums = ArrayBuilder.ofInt(0, 1, 0, 3, 12);
         numMover.moveZeroes(nums);
         ArrayUtils.show(nums);
 
@@ -20,7 +18,7 @@ public class NumMoverTest {
     @Test
     public void moveZeroesV2() {
         NumMover numMover = new NumMover();
-        int[] nums = ArrayBuilder.of(0, 1, 0, 3, 12);
+        int[] nums = ArrayBuilder.ofInt(0, 1, 0, 3, 12);
         numMover.moveZeroesV2(nums);
         ArrayUtils.show(nums);
 

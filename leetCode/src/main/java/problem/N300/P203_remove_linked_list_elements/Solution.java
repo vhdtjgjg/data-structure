@@ -1,5 +1,6 @@
 package problem.N300.P203_remove_linked_list_elements;
 
+import common.ListNode;
 import org.junit.Test;
 
 public class Solution {
@@ -63,12 +64,7 @@ public class Solution {
         ListNode listNode1 = new ListNode(3);
         ListNode listNode2 = new ListNode(3,listNode1);
         ListNode listNode3 = new ListNode(3,listNode2);
-//        ListNode listNode4 = new ListNode(4,listNode3);
-//        ListNode listNode5 = new ListNode(5,listNode4);
 
-        System.out.println(listNode3.printNode());
-        ListNode listNode = removeElements(listNode3, 3);
-        System.out.println(listNode.printNode());
 
     }
 }

@@ -1,6 +1,7 @@
 package common;
 
 import java.util.Objects;
+import java.util.Optional;
 
 public class ListNode {
     public int val;
@@ -23,6 +24,15 @@ public class ListNode {
         for (int anInt : ints) {
             add(anInt);
         }
+    }
+
+    @Override
+    public String toString() {
+        return val+show(next);
+    }
+
+    private String show(ListNode next) {
+        return Optional.ofNullable(next).map(n->","+n.toString()).orElse(";");
     }
 
     /*自制的方法*/

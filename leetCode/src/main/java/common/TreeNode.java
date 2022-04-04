@@ -2,6 +2,7 @@ package common;
 
 import java.util.Deque;
 import java.util.LinkedList;
+import java.util.Objects;
 
 public class TreeNode {
     public int val;
@@ -30,7 +31,7 @@ public class TreeNode {
 
         while (restLength > 0) {
             for (int i = startIndex; i < startIndex + lineNodeNum; i = i + 2) {
-                if (i > nums.length) {
+                if (i >= nums.length) {
                     return root;
                 }
                 cur = nodeQueue.poll();
@@ -84,7 +85,20 @@ public class TreeNode {
         }
     }
 
-    public void show() {
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        TreeNode treeNode = (TreeNode) o;
+        return val == treeNode.val && Objects.equals(left, treeNode.left) && Objects.equals(right, treeNode.right);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(val, left, right);
+    }
+
+    public String show() {
         // 得到树的深度
         int treeDepth = getTreeDepth(this);
 
@@ -106,16 +120,25 @@ public class TreeNode {
         writeArray(this, 0, arrayWidth / 2, res, treeDepth);
 
         // 此时，已经将所有需要显示的元素储存到了二维数组中，将其拼接并打印即可
+        StringBuilder sb = new StringBuilder();
         for (String[] line : res) {
-            StringBuilder sb = new StringBuilder();
             for (int i = 0; i < line.length; i++) {
                 sb.append(line[i]);
                 if (line[i].length() > 1 && i <= line.length - 1) {
                     i += line[i].length() > 4 ? 2 : line[i].length() - 1;
                 }
             }
-            System.out.println(sb.toString());
+            sb.append(System.lineSeparator());
         }
+        return sb.toString();
     }
 
+    @Override
+    public String toString() {
+        return show();
+    }
+
+    private String show(TreeNode right) {
+        return ","+ right;
+    }
 }
